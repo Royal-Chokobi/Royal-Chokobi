@@ -102,8 +102,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jae-Yoon Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Jae Yoon"
+  avatar           : "/assets/images/jylee.png"
   bio              : "Hi~😎"
   location         : "KR_Seoul"
   email            :
