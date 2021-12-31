@@ -21,12 +21,12 @@ title_separator          : "-"
 subtitle                 : "A programmer"
 name                     : "Jae-Yoon Lee"
 description              : "검색하긴 귀찮고, 기억력은 기록을 따라가지 못하더라. 그래서 만든 블로그."
-url                      : "https://royal-chokobi.github.com"
+url                      : "https://royal-chokobi.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "Royal-Chokobi/royal-chokobi.github.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "Royal-Chokobi/royal-chokobi.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/images/jylee.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "I am" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
