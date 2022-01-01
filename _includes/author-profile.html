@@ -242,5 +242,37 @@
 
       {% include author-profile-custom-links.html %}
     </ul>
+
+
+    {% assign categories_max = 0 %}
+    {% assign categories_count = 0 %}
+
+    {% for category in site.categories %}
+      {% if category[1].size > categories_max %}
+        {% assign categories_max = category[1].size %}
+      {% endif %}
+      {% assign categories_count = categories_count | plus: category[1].size %}
+    {% endfor %}
+    <ul class="author__urls social-icons" style="border-top: 1px solid #dee2e6; margin-top: 1em;">
+      <li style="margin-top: 1em;">
+        <a href="/categories/" >
+          <i class="fas fa-fw fa-laptop-code" style="color: #fe7a15;" aria-hidden="true"></i><strong class="label">Category [{{categories_count}}]</strong>
+        </a>
+      </li>
+      {% for i in (1..categories_max) reversed %}
+        {% for category in site.categories %}
+          {% if category[1].size == i %}
+            <li>
+              <a href="/categories/#{{ category[0] | slugify }}">
+                <i class="fas fa-fw fa-caret-right"  aria-hidden="true"></i>
+                <i class="fas fa-fw fa-file-code"  aria-hidden="true"></i>
+                <span>{{ category[0] }}</span> <span class="taxonomy__count">{{ i }}</span>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+
   </div>
 </div>

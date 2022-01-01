@@ -4,6 +4,8 @@
 
 .page__footer {
   @include clearfix;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
   float: left;
   margin-left: 0;
   margin-right: 0;
@@ -48,7 +50,7 @@
 
 .page__footer-copyright {
   font-family: $global-font-family;
-  font-size: $type-size-7;
+  font-size: $type-size-8;
 }
 
 .page__footer-follow {
@@ -63,7 +65,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: $sans-serif-narrow;
-    font-size: $type-size-6;
+    font-size: $type-size-8;
     text-transform: uppercase;
   }
 

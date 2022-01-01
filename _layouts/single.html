@@ -44,6 +44,8 @@ layout: default
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+
+        <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
       </section>
 
       <footer class="page__meta">
